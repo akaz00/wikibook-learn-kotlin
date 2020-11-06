@@ -50,8 +50,11 @@ fun main(args : Array<String>) {
     var sum1 = sumWithVargs(1, 2, 3, 4, 5)
     println(sum1)
 
-    var sum2 = sumWithVargsWithBase(100, 10, 20, 30, 40, 50)
+    var sum2 = sumWithVargs(1, 2, 3)
     println(sum2)
+
+    var sumWithBase = sumWithVargsWithBase(100, 10, 20, 30, 40, 50)
+    println(sumWithBase)
 
     var numList = listOf(1, 2, 3, 4, 5)
     var charSet = setOf("a", "b", "c")
