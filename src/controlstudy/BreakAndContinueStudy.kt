@@ -49,11 +49,10 @@ fun main(args : Array<String>) {
     // continue 명령어 사용 코드
     println("짝수단만 출력")
     for (i in 2..9) {
-        // 만약 단수가 짝수라면 뒤의 명령어는 무시하고 다시 반복문 재개
+        // 만약 홀수 단이라면 뒤의 명령어는 무시하고 다시 반복문 재개
         if (i % 2 != 0) continue
         for (j in 1..9) {
-            print("$i x $j = ${i * j}\n")
+            println("$i x $j = ${i * j}")
         }
-        println()
     }
 }

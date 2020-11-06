@@ -2,11 +2,12 @@ package controlstudy
 
 fun main(args : Array<String>) {
     println("구구단 출력")
+    // (1)
     for(i in 2..9) {
+        // (2)
         for(j in 1..9) {
-            print("$i x $j = ${i * j}\n")
+            println("$i x $j = ${i * j}")
         }
-        println()
     }
 
     println("별찍기 출력")
