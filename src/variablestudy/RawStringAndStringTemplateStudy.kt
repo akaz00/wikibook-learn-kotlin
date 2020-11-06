@@ -11,9 +11,6 @@ fun main(args : Array<String>) {
     println("------")
     println(raw)
     println("------")
-    println("------")
-    println(raw)
-    println("------")
 
     var num1 = 100
     var num2 = 200

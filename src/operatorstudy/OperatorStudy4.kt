@@ -13,9 +13,9 @@ fun main(args : Array<String>) {
     /* 리스트 요소 포함 여부 검사 */
     var list = listOf('a', 'b', 'c', 'd', 'e')
     // 'a' 글자는 리스트에 포함돼 있으므로 true를 반환
-    println("'a' in list : $list")
+    println("'a' in list : ${'a' in list}")
     // 'f' 글자는 리스트에 포함돼 있지 않으므로 false를 반환
-    println("'f' in list : $list")
+    println("'f' in list : ${'f' in list}")
 
     // .. 연산자를 이용하여 1부터 10까지의 범위 정보를 담고 있는 범위 객체 생성
     println(1 in 1 .. 10)
