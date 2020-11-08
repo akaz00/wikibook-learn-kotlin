@@ -77,7 +77,9 @@ fun main(args : Array<String>) {
     // reduce 함수를 이용하여 sum 함수 흉내내기
     var reduced1 = oneToTen.reduce {
         acc, num ->
-        println("acc : $acc ")
+        // (1)
+        println("acc : $acc, num: $num")
+        // (2)
         acc + num
     }
     println("reduced1 : $reduced1")

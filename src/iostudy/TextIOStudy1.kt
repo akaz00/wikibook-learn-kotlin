@@ -1,7 +1,7 @@
 package iostudy
 
 import java.io.File
-import java.util.*
+import java.util.Date
 
 fun main(args : Array<String>) {
     // 파일 생성

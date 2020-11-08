@@ -22,9 +22,15 @@ fun main(args : Array<String>) {
     mutableMap3.remove("key2")
     println(mutableMap3)
 
-    var mutableMap4 = mutableMapOf("key1" to 1, "key2" to 2, "key3" to 2)
+    var mutableMap4 = mutableMapOf("key1" to 1, "key2" to 2, "key3" to 3)
+
+    // get 메서드를 호출해 값에 접근
     var valueFromKey3 = mutableMap4.get("key3")
+    // 인덱스 접근 연산자를 사용해 값에 접근
     var valueFromKey3_ = mutableMap4["key3"]
+
+    println(valueFromKey3)
+    println(valueFromKey3_)
 
     var immutableMap = mapOf("key1" to 1, "key2" to 2)
     var valueFromKey1 = immutableMap["key1"]
@@ -33,4 +39,5 @@ fun main(args : Array<String>) {
 
     // 비어 있는 맵 선언, 키와 값의 타입을 모두 지정해야 함!
     var empty = emptyMap<String, String>()
+    println(empty)
 }

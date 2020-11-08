@@ -16,8 +16,13 @@ fun main(args : Array<String>) {
     mutableList.removeAt(0) // 첫 번째 원소 삭제 (c, e, d)
     println(mutableList)
 
-    var valueAt0 = mutableList.get(0) // 첫 번째 원소 가져오기
-    var valueAt0_ = mutableList[0] // 인덱스를 통한 접근도 가능
+    // get 메서드를 이용해 접근
+    var valueAt0 = mutableList.get(0)
+    // 인덱스 접근 연산자를 이용해 접근
+    var valueAt0_ = mutableList[0]
+
+    println(valueAt0)
+    println(valueAt0_)
 
     for(item in mutableList) {
         print("$item ")
@@ -63,6 +68,14 @@ fun main(args : Array<String>) {
     // 내부 값의 타입이 Int이므로 toIntArray 메서드 호출
     var intArr : IntArray = mutableListOf(1, 2, 3, 4, 5).toIntArray()
 
-    // 비어있는 상수 리스트 대입
+    // 비어있는 리스트 대입
     var empty = emptyList<Int>()
+
+    val li = listOf<Char>()
+    // 비어있는 리스트인지 여부 검사
+    if(li == emptyList<Char>()) {
+        print("비어있는 리스트")
+    } else {
+        print("비어있지 않은 리스트")
+    }
 }
