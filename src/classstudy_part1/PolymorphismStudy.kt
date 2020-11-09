@@ -10,6 +10,7 @@ class Canvas(width: Int, height: Int) {
     }
 }
 
+// 사각형
 class DrawableRectangle(val width: Int, val height: Int) : Drawable {
     private fun drawRectangle(c: Canvas) {
         println("캔버스에 ${width} x ${height} 크기의 사각형을 그립니다.")
@@ -17,6 +18,7 @@ class DrawableRectangle(val width: Int, val height: Int) : Drawable {
     override fun draw(c: Canvas) = drawRectangle(c)
 }
 
+// 원
 class DrawableCircle(val centerX: Int, val centerY: Int, val radius: Int) : Drawable {
     private fun drawCircle(c: Canvas) {
         println("캔버스의 (${centerX}, ${centerY}) 위치에 반지름이 ${radius}인 원을 그립니다.")
@@ -24,6 +26,7 @@ class DrawableCircle(val centerX: Int, val centerY: Int, val radius: Int) : Draw
     override fun draw(c: Canvas) = drawCircle(c)
 }
 
+// 선
 class DrawableLine(val x1: Int, val y1: Int, val x2: Int, val y2: Int) : Drawable {
     private fun drawLine(c: Canvas) {
         println("캔버스의 (${x1}, ${y1}) 위치에서 시작하여 (${x2}, ${y2}) 위치에서 끝나는 선을 그립니다.")
@@ -31,12 +34,12 @@ class DrawableLine(val x1: Int, val y1: Int, val x2: Int, val y2: Int) : Drawabl
     override fun draw(c: Canvas) = drawLine(c)
 }
 
+// 배경색
 class DrawableBackground(val red: Int, val green: Int, val blue: Int) : Drawable {
     override fun draw(c: Canvas) = println("캔버스에 배경색(${red}, ${green}, ${blue})을 칠합니다.")
 }
 
 fun main(args : Array<String>) {
-
     val c = Canvas(500,500)
     val drawables = mutableListOf<Drawable>();
     drawables.add(DrawableRectangle(200, 200))
