@@ -21,11 +21,11 @@ fun main(args : Array<String>) {
     println(round(0.5)) // 0.0 출력
     println(round(0.51)) // 1.0 출력
 
-    // 내림 함수
-    println(ceil(0.1)) // 0.0 출력
-
     // 올림 함수
-    println(floor(0.9)) // 1.0 출력
+    println(ceil(0.1)) // 1.0 출력
+
+    // 내림 함수
+    println(floor(0.9)) // 0.0 출력
 
     // 제곱 함수
     val base = 2.0
