@@ -12,7 +12,7 @@ class Person2(val name: String, var age: Int, val gender: String) {}
 // val, var 키워드가 생략됨(따라서 클래스의 속성이 정의되지 않음)
 class Person3(name: String, age: Int, gender: String) {}
 
-class Person5(val gender: String, val name: String = "무명씨", var age: Int = 20) {}
+class Person4(val gender: String, val name: String = "무명씨", var age: Int = 20) {}
 
 fun main(args : Array<String>) {
     var p1 = Person1()
@@ -48,11 +48,15 @@ fun main(args : Array<String>) {
     // println(p3.gender)
 
     println("--------------------")
-    var p5 = Person5("남성")
-    println("${p5.name} ${p5.age}")
-    p5 = Person5("여성", "이영희", 15)
-    println("${p5.name} ${p5.age}")
-    // p5 = Person5("남성", 30) // 생성 불가
-    p5 = Person5("남성", age=30)
-    println("${p5.name} ${p5.age}")
+    var p4 = Person4("남성")
+    println("${p4.name} ${p4.age}")
+
+    p4 = Person4("여성", "이영희", 15)
+    println("${p4.name} ${p4.age}")
+
+    // 생성 불가
+    // p4 = Person4("남성", 30)
+
+    p4 = Person4("남성", age=30)
+    println("${p4.name} ${p4.age}")
 }

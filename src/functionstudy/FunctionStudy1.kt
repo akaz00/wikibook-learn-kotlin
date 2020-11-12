@@ -16,6 +16,17 @@ fun printHello() {
     println("Hello")
 }
 
+// 문자열 타입의 인자(to)를 받도록 정의한 printHelloTo 함수
+fun printHelloTo(to: String) {
+    println("Hello ${to}")
+}
+
+// 전달받는 인자값은 없고 문자열을 반환하도록 정의한 getHello 함수
+// 함수의 반환값이 존재하므로 콜론 뒤에 문자열 타입 명시
+fun getHello() : String {
+    return "Hello"
+}
+
 fun sum(a: Int, b: Int): Int {
     return a + b
 }
