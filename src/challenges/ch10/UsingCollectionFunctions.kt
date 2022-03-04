@@ -19,7 +19,7 @@ fun main(args : Array<String>) {
     println(filtered2)
 
     val count = names.count {
-        it.length >= 3
+        it.length == 3
     }
     println(count)
 }

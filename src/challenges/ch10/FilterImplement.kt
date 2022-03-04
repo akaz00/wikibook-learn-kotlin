@@ -15,7 +15,7 @@ fun <T> List<T>.myFilter(predicate: (T) -> Boolean) : List<T> {
 fun main(args : Array<String>) {
     // "H"로 시작하는 문자열만 필터링
     val result1 = listOf("Hello", "Banana", "World", "Hole").myFilter {
-        it.length == 5 || it.startsWith("H")
+        it.startsWith("H")
     }
     println(result1)
 
